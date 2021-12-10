@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: wordpress-deployment
-  namespace: wordpress
+  # namespace: wordpress
   labels:
     app: wordpress
 spec:
@@ -62,13 +62,13 @@ apiVersion: v1
 kind: Service
 metadata:
   name: wordpress-service
-  namespace: wordpress
+  # namespace: wordpress
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: wordpress
   ports:
     - protocol: TCP
       port: 80
       targetPort: 80
-      nodePort: 31080
+      # nodePort: 31080

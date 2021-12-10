@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: mysql-config
-  namespace: wordpress
+  # namespace: wordpress
 data:
   MYSQL_URL: mysql-service
   MYSQL_DATABASE: wordpress
