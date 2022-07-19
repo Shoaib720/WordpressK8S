@@ -64,11 +64,11 @@ metadata:
   name: wordpress-service
   # namespace: wordpress
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: wordpress
   ports:
     - protocol: TCP
       port: 80
       targetPort: 80
-      # nodePort: 31800
+      nodePort: 31800

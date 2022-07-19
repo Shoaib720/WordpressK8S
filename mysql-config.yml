@@ -4,5 +4,6 @@ metadata:
   name: mysql-config
   # namespace: wordpress
 data:
-  MYSQL_URL: wordpressdb.chqcr4lqkoiu.us-east-1.rds.amazonaws.com
-  # MYSQL_DATABASE: wordpress
+  # MYSQL_URL: wordpressdb.chqcr4lqkoiu.us-east-1.rds.amazonaws.com
+  MYSQL_URL: mysql-service
+  MYSQL_DATABASE: wordpress
